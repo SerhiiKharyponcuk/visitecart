@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#0b1020" />
+    <title>Serhii Kharyponchuk — Future Web Designer</title>
+    <meta name="description" content="Serhii Kharyponchuk — Future Web Designer. Contact, links, and projects." />
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <div class="bg">
+        <div class="glow g1"></div>
+        <div class="glow g2"></div>
+        <div class="lines"></div>
+    </div>
+
+    <header class="topbar">
+        <div class="container topbar__inner">
+            <a class="brand" href="#" aria-label="Home">
+                <span class="brand__dot"></span>
+                <span class="brand__text">Serhii</span>
+            </a>
+
+            <nav class="topbar__actions" aria-label="Primary">
+                <a class="btn btn--ghost" href="#contact" data-i18n="nav_contact">Contact</a>
+
+                <button class="lang" type="button" id="langToggle" aria-label="Change language">
+                    <span class="lang__pill" id="langPill">NL</span>
+                    <span class="lang__hint">/ EN</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero" id="top">
+            <div class="hero__card">
+                <div class="hero__photoWrap" aria-hidden="true">
+                    <!-- Замінити src на своє фото -->
+                    <img class="hero__photo" src="./images/visiteimg.png" alt="" />
+                    <div class="hero__photoOverlay"></div>
+                </div>
+
+                <div class="hero__content">
+                    <p class="kicker" data-i18n="kicker">Modern • Business • Clean</p>
+
+                    <h1 class="title">
+                        <span class="title__name">Serhii Kharyponchuk</span>
+                        <span class="title__role" data-i18n="role">Future Web Designer</span>
+                    </h1>
+
+                    <p class="lead" data-i18n="lead">
+                        I build clean, fast, and modern websites. Open for projects and collaboration.
+                    </p>
+
+                    <div class="cta">
+                        <a class="btn btn--primary" id="btnApp" href="APP_URL" target="_blank" rel="noreferrer">
+                            <span data-i18n="btn_app">Open my site/app</span>
+                            <span class="btn__icon" aria-hidden="true">↗</span>
+                        </a>
+
+                        <a class="btn btn--secondary" id="btnGitHub" href="GITHUB_URL" target="_blank" rel="noreferrer">
+                            GitHub
+                            <span class="btn__icon" aria-hidden="true">↗</span>
+                        </a>
+                    </div>
+
+                    <div class="chips" aria-label="Skills">
+                        <span class="chip">UI</span>
+                        <span class="chip">Web</span>
+                        <span class="chip">Design</span>
+                        <span class="chip">Games</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid">
+            <article class="panel">
+                <h2 class="panel__title" data-i18n="about_title">About</h2>
+                <p class="panel__text" data-i18n="about_text">
+                    Student focused on IT and web design. I like clean layouts, strong typography, and smooth UI
+                    details.
+                </p>
+            </article>
+
+            <article class="panel">
+                <h2 class="panel__title" data-i18n="links_title">Quick links</h2>
+
+                <div class="links">
+                    <a class="link" href="GITHUB_URL" target="_blank" rel="noreferrer">
+                        <span class="link__label">GitHub</span>
+                        <span class="link__meta" data-i18n="links_github_meta">Projects & code</span>
+                        <span class="link__arrow" aria-hidden="true">→</span>
+                    </a>
+
+                    <a class="link" href="APP_URL" target="_blank" rel="noreferrer">
+                        <span class="link__label" data-i18n="links_app_label">My app/site</span>
+                        <span class="link__meta" data-i18n="links_app_meta">Open the latest build</span>
+                        <span class="link__arrow" aria-hidden="true">→</span>
+                    </a>
+                </div>
+            </article>
+
+            <article class="panel" id="contact">
+                <h2 class="panel__title" data-i18n="contact_title">Contact</h2>
+
+                <ul class="contact">
+                    <li class="contact__item">
+                        <span class="contact__icon" aria-hidden="true">✆</span>
+                        <a class="contact__value" href="tel:+380680069037">+380 68 006 9037</a>
+                    </li>
+
+                    <li class="contact__item">
+                        <span class="contact__icon" aria-hidden="true">✉</span>
+                        <a class="contact__value"
+                            href="mailto:hariponcuksergej@gmail.com">hariponcuksergej@gmail.com</a>
+                    </li>
+
+                    <li class="contact__item">
+                        <span class="contact__icon" aria-hidden="true">🏫</span>
+                        <span class="contact__value">Groot Goylant — 3D VMBO</span>
+                    </li>
+
+                    <li class="contact__item">
+                        <span class="contact__icon" aria-hidden="true">☎</span>
+                        <a class="contact__value" href="tel:+31356850014">035-6850014</a>
+                        <span class="contact__hint" data-i18n="school_phone_hint">School phone</span>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <footer class="footer">
+            <div class="footer__inner">
+                <span class="footer__line"></span>
+                <p class="footer__text">
+                    <span>©</span>
+                    <span id="year"></span>
+                    <span>Serhii Kharyponchuk</span>
+                </p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
