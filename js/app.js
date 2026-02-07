@@ -21,11 +21,11 @@ const I18N = {
   nl: {
     nav_contact: "Contact",
     kicker: "Modern • Zakelijk • Clean",
-    role: "Future Web Designer",
+    role: "Future Web Developer",
     lead: "Ik bouw moderne, snelle websites met een strakke uitstraling. Open voor projecten en samenwerking.",
     btn_app: "Open mijn site/app",
     about_title: "Over mij",
-    about_text: "Leerling met focus op IT en webdesign. Ik hou van strakke layouts, sterke typografie en nette UI-details.",
+    about_text: "Leerling met focus op IT en webdevelopment. Ik bouw functionele websites met HTML, CSS en JavaScript.",
     links_title: "Snelle links",
     links_app_label: "Mijn app/site",
     links_app_meta: "Open de nieuwste versie",
