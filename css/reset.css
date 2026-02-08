@@ -100,3 +100,8 @@ p {
     scroll-behavior: auto !important;
   }
 }
+/* Fix long email/links on mobile */
+.contact__value {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
