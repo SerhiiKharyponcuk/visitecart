@@ -50,7 +50,7 @@ const I18N = {
   }
 };
 
-function applyLang(lang){
+function applyLang(lang) {
   const dict = I18N[lang] || I18N.nl;
   document.documentElement.lang = lang;
 
@@ -70,3 +70,27 @@ $("#langToggle").addEventListener("click", () => {
   const current = localStorage.getItem("lang") || "nl";
   applyLang(current === "nl" ? "en" : "nl");
 });
+
+// =======================
+// LUX SHOWCASE LOADER v3
+// Always premium (desktop + mobile)
+// =======================
+(function initLuxShowcaseLoader() {
+  const loader = document.getElementById("luxLoader");
+  if (!loader) return;
+
+  const DURATION = 2400; // 2.4s (можеш 2800)
+
+  window.addEventListener("load", () => {
+    setTimeout(() => {
+      // before hiding loader (optional)
+      document.querySelectorAll(".lux-tag").forEach(tag => {
+        tag.style.animation = "none";
+        tag.offsetHeight; // reflow
+        tag.style.animation = "";
+      });
+
+      loader.classList.add("is-hidden");
+    }, DURATION);
+  });
+})();
