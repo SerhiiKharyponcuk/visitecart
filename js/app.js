@@ -25,7 +25,7 @@ const I18N = {
     lead: "Ik bouw moderne, snelle websites met een strakke uitstraling. Open voor projecten en samenwerking.",
     btn_app: "Open mijn site/app",
     about_title: "Over mij",
-    about_text: "Leerling met focus op IT en webdevelopment. Ik bouw functionele websites met HTML, CSS en JavaScript.",
+    about_text: "Student with a focus on IT and web development. I build functional websites using HTML, CSS, and JavaScript.",
     links_title: "Snelle links",
     links_app_label: "Mijn app/site",
     links_app_meta: "Open de nieuwste versie",
